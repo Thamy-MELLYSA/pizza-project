@@ -1,0 +1,78 @@
+.pizza-container {
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  overflow: auto;
+  border-left: 2px solid transparent;
+  border-top: 2px solid transparent;
+  scrollbar-width: 0;
+  scrollbar-color: transparent transparent;
+  user-select: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.main.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.fixed-scroll {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  left: -2%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  width: 100vw;
+}
+
+.fixed-scroll-up {
+  top: 6rem;
+}
+
+.pizza-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-left: -50px; /* Temporary fix for Align Pizza */
+  transform: rotate(-105deg);
+}
+
+.fixed-scroll-down {
+  bottom: 0.3rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  max-width: 1368px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+

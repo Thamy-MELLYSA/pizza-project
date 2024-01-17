@@ -1,0 +1,191 @@
+.build-pizza-container {
+  max-height: 100vh;
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  max-width: 768px;
+  width: 100%;
+  margin: 0.5rem auto 0 0.5rem !important;
+}
+
+.main {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.pizza-section {
+  position: relative;
+}
+
+.pizza-image {
+  width: 400px;
+  transform: translateX(-5rem) rotate(-105deg);
+}
+
+.calabresa {
+  width: 290px;
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+.circle-text {
+  position: absolute;
+  top: 0;
+  left: -1.2rem;
+}
+.circle-text.circle-text-secondary {
+  top: 2rem;
+}
+
+.list {
+  position: absolute;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5em;
+  background-color: #f26a25;
+  border-radius: 8px;
+  top: 2rem;
+  gap: 4px;
+  right: 0.5rem;
+  height: 350px;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ingredient-title {
+  text-transform: uppercase;
+}
+
+.ingredient-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 2px;
+}
+
+.ingredient-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ingredient-item {
+  padding: 0 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.selected {
+  background-color: #f22a10;
+  padding: 0.6rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.total-box {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.nav-bar {
+  background-color: #f26a25;
+  color: #000;
+  font-weight: bold;
+  max-width: 780px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+.ingredient-button {
+  cursor: pointer;
+  background: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.ingredient-button.ingredient-select {
+  width: 100%;
+  padding: 1rem;
+  border: solid 0.1rem;
+}
+
+.nav-button:hover {
+  background-color: #f22a10;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.ingredients {
+  display: flex;
+  width: 100%;
+  gap: 1rem; /* Substituí gap-4 por 1rem para manter a separação */
+  overflow-x: auto;
+}
+
+.ingredients::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-image {
+  width: 7rem /* 112px */;
+  height: auto;
+}
+
+.action-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  max-width: 768px;
+  margin: 0.5rem auto;
+}
+
+.btn{
+  border: #000!important;
+  background-color: #000!important;
+}
+.modal{
+  --bs-modal-footer-border-width: initial !important;
+  --bs-modal-width: 364px!important;
+  --bs-modal-header-border-color:initial!important;
+}
+a {
+  text-decoration: none!important;
+  color: white!important;
+}
+/* keyframes para pizza */
+@-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}

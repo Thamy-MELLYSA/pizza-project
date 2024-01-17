@@ -1,0 +1,55 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.pizza-image {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  transform: rotate(-90deg);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.button {
+  flex: 1;
+  padding: 1rem;
+  font-size: medium;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.button-primary {
+  background-color: #f26a25;
+  color: #fff;
+}
+
+.button-secondary {
+  background-color: #ddd; /* Cor de fundo secundária de exemplo */
+  color: #333; /* Cor do texto secundária de exemplo */
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.divide-x-2 {
+  border-right: 2px solid #000;
+}
+
+.divide-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(2px * var(--tw-divide-x-reverse));
+  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
+  --tw-divide-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-divide-opacity));
+}
+.button a{
+  color: #fff;
+  text-decoration: none;
+}
